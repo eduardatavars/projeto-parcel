@@ -1,2 +1,138 @@
+.hero {
+  background-image: url("../fundo-byseuamor.25e766f2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 64px;
+  padding-bottom: 100px;
+  position: relative;
+}
 
+.hero .container {
+  position: relative;
+}
+
+.hero:before {
+  content: "";
+  opacity: .7;
+  background-color: #000;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.hero__logo {
+  width: 250px;
+  margin: 0 auto;
+  display: block;
+}
+
+.hero__text {
+  text-align: center;
+  margin-top: 64px;
+  margin-bottom: 64px;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 56px;
+}
+
+.hero__text b {
+  color: #e39178;
+}
+
+.infos-bar {
+  background-color: #fff5eb;
+  border-radius: 25px;
+  justify-content: space-between;
+  padding: 16px 24px;
+  display: flex;
+}
+
+.infos-bar__infos {
+  gap: 150px;
+  display: flex;
+}
+
+.infos-bar__infos__item {
+  color: #e39178;
+  font-size: 14px;
+}
+
+.infos-bar__infos__item b {
+  color: #b1816c;
+  font-size: 18px;
+  display: block;
+}
+
+@media (width <= 1024px) {
+  .infos-bar__infos {
+    gap: 16px;
+  }
+}
+
+@media (width <= 640px) {
+  .infos-bar, .infos-bar__infos {
+    display: block;
+  }
+
+  .infos-bar__infos__item {
+    margin-bottom: 24px;
+  }
+}
+
+.button {
+  text-align: center;
+  white-space: nowrap;
+  border-radius: 20px;
+  padding: 12px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.button--primary {
+  color: #fff5eb;
+  background-color: #b1816c;
+}
+
+@media (width <= 1024px) {
+  .button {
+    align-items: center;
+    display: flex;
+  }
+}
+
+@media (width <= 640px) {
+  .button {
+    width: 100%;
+    display: block;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  color: #fff5eb;
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, sans-serif;
+  list-style: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+@media (width <= 1024px) {
+  .container {
+    max-width: 90%;
+  }
+}
+
+@media (width <= 640px) {
+  .container {
+    max-width: 80%;
+  }
+}
 /*# sourceMappingURL=main.css.map */
