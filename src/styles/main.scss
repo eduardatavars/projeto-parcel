@@ -12,6 +12,10 @@
     list-style: none;
 }
 
+body {
+    background-color: variables.$bgBody;
+}
+
 .container {
     max-width: 960px;
     width: 100%;
